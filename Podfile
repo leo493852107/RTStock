@@ -10,7 +10,7 @@ target 'RTStock' do
 	pod 'IQKeyboardManager'
 	pod 'MBProgressHUD', '~> 0.9.1'
 	pod 'pop', '~> 1.0'
-	pod 'YYModel'
+	pod 'MJExtension'
 	pod 'YYText'
 	pod 'SVProgressHUD'
 	pod 'SCLAlertView-Objective-C'

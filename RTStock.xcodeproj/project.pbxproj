@@ -13,6 +13,10 @@
 		B3169C591D044B64005A9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3169C581D044B64005A9E7C /* Assets.xcassets */; };
 		B3169C5C1D044B64005A9E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3169C5A1D044B64005A9E7C /* LaunchScreen.storyboard */; };
 		B3169C651D044BFD005A9E7C /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C641D044BFD005A9E7C /* JSRootViewController.m */; };
+		B3169C681D05160B005A9E7C /* JSHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C671D05160B005A9E7C /* JSHTTPTool.m */; };
+		B3169C6B1D053B63005A9E7C /* JSStock.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C6A1D053B63005A9E7C /* JSStock.m */; };
+		B3169C741D05653B005A9E7C /* JSBuyPankou.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C731D05653B005A9E7C /* JSBuyPankou.m */; };
+		B3169C771D05654E005A9E7C /* JSSellPankou.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C761D05654E005A9E7C /* JSSellPankou.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		B3169C5D1D044B64005A9E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3169C631D044BFD005A9E7C /* JSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSRootViewController.h; path = ../JSRootViewController.h; sourceTree = "<group>"; };
 		B3169C641D044BFD005A9E7C /* JSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSRootViewController.m; path = ../JSRootViewController.m; sourceTree = "<group>"; };
+		B3169C661D05160B005A9E7C /* JSHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHTTPTool.h; sourceTree = "<group>"; };
+		B3169C671D05160B005A9E7C /* JSHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHTTPTool.m; sourceTree = "<group>"; };
+		B3169C691D053B63005A9E7C /* JSStock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSStock.h; path = ../JSStock.h; sourceTree = "<group>"; };
+		B3169C6A1D053B63005A9E7C /* JSStock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSStock.m; path = ../JSStock.m; sourceTree = "<group>"; };
+		B3169C721D05653B005A9E7C /* JSBuyPankou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBuyPankou.h; sourceTree = "<group>"; };
+		B3169C731D05653B005A9E7C /* JSBuyPankou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBuyPankou.m; sourceTree = "<group>"; };
+		B3169C751D05654E005A9E7C /* JSSellPankou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSellPankou.h; sourceTree = "<group>"; };
+		B3169C761D05654E005A9E7C /* JSSellPankou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSellPankou.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,14 @@
 				B3169C5A1D044B64005A9E7C /* LaunchScreen.storyboard */,
 				B3169C5D1D044B64005A9E7C /* Info.plist */,
 				B3169C4C1D044B64005A9E7C /* Supporting Files */,
+				B3169C661D05160B005A9E7C /* JSHTTPTool.h */,
+				B3169C671D05160B005A9E7C /* JSHTTPTool.m */,
+				B3169C691D053B63005A9E7C /* JSStock.h */,
+				B3169C6A1D053B63005A9E7C /* JSStock.m */,
+				B3169C721D05653B005A9E7C /* JSBuyPankou.h */,
+				B3169C731D05653B005A9E7C /* JSBuyPankou.m */,
+				B3169C751D05654E005A9E7C /* JSSellPankou.h */,
+				B3169C761D05654E005A9E7C /* JSSellPankou.m */,
 			);
 			path = RTStock;
 			sourceTree = "<group>";
@@ -221,9 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3169C6B1D053B63005A9E7C /* JSStock.m in Sources */,
 				B3169C511D044B64005A9E7C /* AppDelegate.m in Sources */,
 				B3169C651D044BFD005A9E7C /* JSRootViewController.m in Sources */,
+				B3169C771D05654E005A9E7C /* JSSellPankou.m in Sources */,
+				B3169C681D05160B005A9E7C /* JSHTTPTool.m in Sources */,
 				B3169C4E1D044B64005A9E7C /* main.m in Sources */,
+				B3169C741D05653B005A9E7C /* JSBuyPankou.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

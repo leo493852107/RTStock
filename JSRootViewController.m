@@ -7,6 +7,11 @@
 //
 
 #import "JSRootViewController.h"
+#import "JSStock.h"
+#import "JSHTTPTool.h"
+#import "JSBuyPankou.h"
+
+#import <MJExtension.h>
 
 @interface JSRootViewController ()
 
@@ -17,7 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    [JSHTTPTool GET:@"https://app.leverfun.com/timelyInfo/timelyOrderForm?stockCode=" stockCode:@"300104" parameters:nil success:^(id responseObject) {
+        
+        JSStock *stock = [JSStock mj_objectWithKeyValues:responseObject];
+        
+        NSArray *buyPankous = stock.buyPankous;
+        
+        for (int i = 0; i < buyPankous.count; i++) {
+            JSBuyPankou *buy = buyPankous[i];
+            NSLog(@"%@", buy.price);
+            NSLog(@"%ld", (long)buy.volume);
+        }
+        
+        
+        
+    } failure:^(NSError *error) {
+        NSLog(@"%@", error);
+    }];
     
 }
 
@@ -26,14 +47,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
