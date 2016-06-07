@@ -1,11 +1,2 @@
 # Xcode
 .DS_Store
-Build/
-*/build/*
-*.moved-aside
-DerivedData
-.idea/
-*.hmap
-*.xccheckout
-Build/
-*.lock

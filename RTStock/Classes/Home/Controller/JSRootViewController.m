@@ -15,6 +15,12 @@
 
 @interface JSRootViewController ()
 
+/** sellPankouTableView */
+@property (nonatomic, strong) UITableView *sellTV;
+
+/** buyPankouTableView */
+@property (nonatomic, strong) UITableView *buyTV;
+
 @end
 
 @implementation JSRootViewController
