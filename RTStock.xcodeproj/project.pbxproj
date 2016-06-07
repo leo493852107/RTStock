@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		173E7AE3A95581A56453AA86 /* libPods-RTStock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B02E5150CBBF69633C527CA /* libPods-RTStock.a */; };
 		B3169C4E1D044B64005A9E7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C4D1D044B64005A9E7C /* main.m */; };
-		B3169C511D044B64005A9E7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C501D044B64005A9E7C /* AppDelegate.m */; };
 		B3169C591D044B64005A9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3169C581D044B64005A9E7C /* Assets.xcassets */; };
 		B3169C5C1D044B64005A9E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3169C5A1D044B64005A9E7C /* LaunchScreen.storyboard */; };
-		B3169C651D044BFD005A9E7C /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C641D044BFD005A9E7C /* JSRootViewController.m */; };
-		B3169C681D05160B005A9E7C /* JSHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C671D05160B005A9E7C /* JSHTTPTool.m */; };
-		B3169C6B1D053B63005A9E7C /* JSStock.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C6A1D053B63005A9E7C /* JSStock.m */; };
-		B3169C741D05653B005A9E7C /* JSBuyPankou.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C731D05653B005A9E7C /* JSBuyPankou.m */; };
-		B3169C771D05654E005A9E7C /* JSSellPankou.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C761D05654E005A9E7C /* JSSellPankou.m */; };
+		B3169C8D1D06603A005A9E7C /* JSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C7D1D06603A005A9E7C /* JSRootViewController.m */; };
+		B3169C8E1D06603A005A9E7C /* JSBuyPankou.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C801D06603A005A9E7C /* JSBuyPankou.m */; };
+		B3169C8F1D06603A005A9E7C /* JSSellPankou.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C821D06603A005A9E7C /* JSSellPankou.m */; };
+		B3169C901D06603A005A9E7C /* JSStock.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C841D06603A005A9E7C /* JSStock.m */; };
+		B3169C911D06603A005A9E7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C881D06603A005A9E7C /* AppDelegate.m */; };
+		B3169C991D06608E005A9E7C /* JSHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C981D06608E005A9E7C /* JSHTTPTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,21 +25,22 @@
 		8B02E5150CBBF69633C527CA /* libPods-RTStock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RTStock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3169C491D044B64005A9E7C /* RTStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3169C4D1D044B64005A9E7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B3169C4F1D044B64005A9E7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B3169C501D044B64005A9E7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B3169C581D044B64005A9E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3169C5B1D044B64005A9E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3169C5D1D044B64005A9E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3169C631D044BFD005A9E7C /* JSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSRootViewController.h; path = ../JSRootViewController.h; sourceTree = "<group>"; };
-		B3169C641D044BFD005A9E7C /* JSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSRootViewController.m; path = ../JSRootViewController.m; sourceTree = "<group>"; };
-		B3169C661D05160B005A9E7C /* JSHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHTTPTool.h; sourceTree = "<group>"; };
-		B3169C671D05160B005A9E7C /* JSHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHTTPTool.m; sourceTree = "<group>"; };
-		B3169C691D053B63005A9E7C /* JSStock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSStock.h; path = ../JSStock.h; sourceTree = "<group>"; };
-		B3169C6A1D053B63005A9E7C /* JSStock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSStock.m; path = ../JSStock.m; sourceTree = "<group>"; };
-		B3169C721D05653B005A9E7C /* JSBuyPankou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBuyPankou.h; sourceTree = "<group>"; };
-		B3169C731D05653B005A9E7C /* JSBuyPankou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBuyPankou.m; sourceTree = "<group>"; };
-		B3169C751D05654E005A9E7C /* JSSellPankou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSellPankou.h; sourceTree = "<group>"; };
-		B3169C761D05654E005A9E7C /* JSSellPankou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSellPankou.m; sourceTree = "<group>"; };
+		B3169C7C1D06603A005A9E7C /* JSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRootViewController.h; sourceTree = "<group>"; };
+		B3169C7D1D06603A005A9E7C /* JSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootViewController.m; sourceTree = "<group>"; };
+		B3169C7F1D06603A005A9E7C /* JSBuyPankou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBuyPankou.h; sourceTree = "<group>"; };
+		B3169C801D06603A005A9E7C /* JSBuyPankou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBuyPankou.m; sourceTree = "<group>"; };
+		B3169C811D06603A005A9E7C /* JSSellPankou.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSSellPankou.h; sourceTree = "<group>"; };
+		B3169C821D06603A005A9E7C /* JSSellPankou.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSSellPankou.m; sourceTree = "<group>"; };
+		B3169C831D06603A005A9E7C /* JSStock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStock.h; sourceTree = "<group>"; };
+		B3169C841D06603A005A9E7C /* JSStock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSStock.m; sourceTree = "<group>"; };
+		B3169C871D06603A005A9E7C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3169C881D06603A005A9E7C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3169C8C1D06603A005A9E7C /* leoPch.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leoPch.pch; sourceTree = "<group>"; };
+		B3169C971D06608E005A9E7C /* JSHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSHTTPTool.h; sourceTree = "<group>"; };
+		B3169C981D06608E005A9E7C /* JSHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSHTTPTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,22 +93,11 @@
 		B3169C4B1D044B64005A9E7C /* RTStock */ = {
 			isa = PBXGroup;
 			children = (
-				B3169C4F1D044B64005A9E7C /* AppDelegate.h */,
-				B3169C501D044B64005A9E7C /* AppDelegate.m */,
-				B3169C631D044BFD005A9E7C /* JSRootViewController.h */,
-				B3169C641D044BFD005A9E7C /* JSRootViewController.m */,
+				B3169C791D06603A005A9E7C /* Classes */,
 				B3169C581D044B64005A9E7C /* Assets.xcassets */,
 				B3169C5A1D044B64005A9E7C /* LaunchScreen.storyboard */,
 				B3169C5D1D044B64005A9E7C /* Info.plist */,
 				B3169C4C1D044B64005A9E7C /* Supporting Files */,
-				B3169C661D05160B005A9E7C /* JSHTTPTool.h */,
-				B3169C671D05160B005A9E7C /* JSHTTPTool.m */,
-				B3169C691D053B63005A9E7C /* JSStock.h */,
-				B3169C6A1D053B63005A9E7C /* JSStock.m */,
-				B3169C721D05653B005A9E7C /* JSBuyPankou.h */,
-				B3169C731D05653B005A9E7C /* JSBuyPankou.m */,
-				B3169C751D05654E005A9E7C /* JSSellPankou.h */,
-				B3169C761D05654E005A9E7C /* JSSellPankou.m */,
 			);
 			path = RTStock;
 			sourceTree = "<group>";
@@ -118,6 +108,74 @@
 				B3169C4D1D044B64005A9E7C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3169C791D06603A005A9E7C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B3169C7A1D06603A005A9E7C /* Home */,
+				B3169C861D06603A005A9E7C /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B3169C7A1D06603A005A9E7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B3169C7B1D06603A005A9E7C /* Controller */,
+				B3169C7E1D06603A005A9E7C /* Model */,
+				B3169C851D06603A005A9E7C /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B3169C7B1D06603A005A9E7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3169C7C1D06603A005A9E7C /* JSRootViewController.h */,
+				B3169C7D1D06603A005A9E7C /* JSRootViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3169C7E1D06603A005A9E7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3169C7F1D06603A005A9E7C /* JSBuyPankou.h */,
+				B3169C801D06603A005A9E7C /* JSBuyPankou.m */,
+				B3169C811D06603A005A9E7C /* JSSellPankou.h */,
+				B3169C821D06603A005A9E7C /* JSSellPankou.m */,
+				B3169C831D06603A005A9E7C /* JSStock.h */,
+				B3169C841D06603A005A9E7C /* JSStock.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3169C851D06603A005A9E7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3169C861D06603A005A9E7C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B3169C961D06608E005A9E7C /* HTTPTool */,
+				B3169C871D06603A005A9E7C /* AppDelegate.h */,
+				B3169C881D06603A005A9E7C /* AppDelegate.m */,
+				B3169C8C1D06603A005A9E7C /* leoPch.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B3169C961D06608E005A9E7C /* HTTPTool */ = {
+			isa = PBXGroup;
+			children = (
+				B3169C971D06608E005A9E7C /* JSHTTPTool.h */,
+				B3169C981D06608E005A9E7C /* JSHTTPTool.m */,
+			);
+			path = HTTPTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,13 +299,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3169C6B1D053B63005A9E7C /* JSStock.m in Sources */,
-				B3169C511D044B64005A9E7C /* AppDelegate.m in Sources */,
-				B3169C651D044BFD005A9E7C /* JSRootViewController.m in Sources */,
-				B3169C771D05654E005A9E7C /* JSSellPankou.m in Sources */,
-				B3169C681D05160B005A9E7C /* JSHTTPTool.m in Sources */,
+				B3169C901D06603A005A9E7C /* JSStock.m in Sources */,
+				B3169C8F1D06603A005A9E7C /* JSSellPankou.m in Sources */,
+				B3169C911D06603A005A9E7C /* AppDelegate.m in Sources */,
 				B3169C4E1D044B64005A9E7C /* main.m in Sources */,
-				B3169C741D05653B005A9E7C /* JSBuyPankou.m in Sources */,
+				B3169C991D06608E005A9E7C /* JSHTTPTool.m in Sources */,
+				B3169C8D1D06603A005A9E7C /* JSRootViewController.m in Sources */,
+				B3169C8E1D06603A005A9E7C /* JSBuyPankou.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +410,7 @@
 			baseConfigurationReference = 1196134F5365C4F7C9AF52A1 /* Pods-RTStock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RTStock/Classes/Other/leoPch.pch";
 				INFOPLIST_FILE = RTStock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -365,6 +424,7 @@
 			baseConfigurationReference = 37831482101781A380F01FC1 /* Pods-RTStock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RTStock/Classes/Other/leoPch.pch";
 				INFOPLIST_FILE = RTStock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
