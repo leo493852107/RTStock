@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		173E7AE3A95581A56453AA86 /* libPods-RTStock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B02E5150CBBF69633C527CA /* libPods-RTStock.a */; };
+		B3062FC01D07BF04001AFBCB /* JSRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3062FBF1D07BF04001AFBCB /* JSRootViewController.xib */; };
+		B3062FC41D0801C4001AFBCB /* JSRootViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3062FC21D0801C4001AFBCB /* JSRootViewCell.m */; };
+		B3062FC51D0801C4001AFBCB /* JSRootViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3062FC31D0801C4001AFBCB /* JSRootViewCell.xib */; };
 		B3169C4E1D044B64005A9E7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C4D1D044B64005A9E7C /* main.m */; };
 		B3169C591D044B64005A9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3169C581D044B64005A9E7C /* Assets.xcassets */; };
 		B3169C5C1D044B64005A9E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3169C5A1D044B64005A9E7C /* LaunchScreen.storyboard */; };
@@ -23,6 +26,10 @@
 		1196134F5365C4F7C9AF52A1 /* Pods-RTStock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTStock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTStock/Pods-RTStock.debug.xcconfig"; sourceTree = "<group>"; };
 		37831482101781A380F01FC1 /* Pods-RTStock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTStock.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTStock/Pods-RTStock.release.xcconfig"; sourceTree = "<group>"; };
 		8B02E5150CBBF69633C527CA /* libPods-RTStock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RTStock.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3062FBF1D07BF04001AFBCB /* JSRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSRootViewController.xib; sourceTree = "<group>"; };
+		B3062FC11D0801C4001AFBCB /* JSRootViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRootViewCell.h; sourceTree = "<group>"; };
+		B3062FC21D0801C4001AFBCB /* JSRootViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootViewCell.m; sourceTree = "<group>"; };
+		B3062FC31D0801C4001AFBCB /* JSRootViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSRootViewCell.xib; sourceTree = "<group>"; };
 		B3169C491D044B64005A9E7C /* RTStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3169C4D1D044B64005A9E7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3169C581D044B64005A9E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +141,7 @@
 			children = (
 				B3169C7C1D06603A005A9E7C /* JSRootViewController.h */,
 				B3169C7D1D06603A005A9E7C /* JSRootViewController.m */,
+				B3062FBF1D07BF04001AFBCB /* JSRootViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +162,9 @@
 		B3169C851D06603A005A9E7C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B3062FC11D0801C4001AFBCB /* JSRootViewCell.h */,
+				B3062FC21D0801C4001AFBCB /* JSRootViewCell.m */,
+				B3062FC31D0801C4001AFBCB /* JSRootViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +252,8 @@
 			files = (
 				B3169C5C1D044B64005A9E7C /* LaunchScreen.storyboard in Resources */,
 				B3169C591D044B64005A9E7C /* Assets.xcassets in Resources */,
+				B3062FC01D07BF04001AFBCB /* JSRootViewController.xib in Resources */,
+				B3062FC51D0801C4001AFBCB /* JSRootViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +319,7 @@
 				B3169C991D06608E005A9E7C /* JSHTTPTool.m in Sources */,
 				B3169C8D1D06603A005A9E7C /* JSRootViewController.m in Sources */,
 				B3169C8E1D06603A005A9E7C /* JSBuyPankou.m in Sources */,
+				B3062FC41D0801C4001AFBCB /* JSRootViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
