@@ -11,6 +11,11 @@
 		B3062FC01D07BF04001AFBCB /* JSRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3062FBF1D07BF04001AFBCB /* JSRootViewController.xib */; };
 		B3062FC41D0801C4001AFBCB /* JSRootViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3062FC21D0801C4001AFBCB /* JSRootViewCell.m */; };
 		B3062FC51D0801C4001AFBCB /* JSRootViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3062FC31D0801C4001AFBCB /* JSRootViewCell.xib */; };
+		B3062FD31D0A58A2001AFBCB /* JSTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3062FD21D0A58A2001AFBCB /* JSTabViewController.m */; };
+		B3062FDB1D0A5CAE001AFBCB /* JSOptionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3062FD91D0A5CAE001AFBCB /* JSOptionalViewController.m */; };
+		B3062FDC1D0A5CAE001AFBCB /* JSOptionalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3062FDA1D0A5CAE001AFBCB /* JSOptionalViewController.xib */; };
+		B3062FED1D0A691C001AFBCB /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B3062FEB1D0A691C001AFBCB /* home.png */; };
+		B3062FEE1D0A691C001AFBCB /* optional.png in Resources */ = {isa = PBXBuildFile; fileRef = B3062FEC1D0A691C001AFBCB /* optional.png */; };
 		B3169C4E1D044B64005A9E7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3169C4D1D044B64005A9E7C /* main.m */; };
 		B3169C591D044B64005A9E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3169C581D044B64005A9E7C /* Assets.xcassets */; };
 		B3169C5C1D044B64005A9E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3169C5A1D044B64005A9E7C /* LaunchScreen.storyboard */; };
@@ -30,6 +35,13 @@
 		B3062FC11D0801C4001AFBCB /* JSRootViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSRootViewCell.h; sourceTree = "<group>"; };
 		B3062FC21D0801C4001AFBCB /* JSRootViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSRootViewCell.m; sourceTree = "<group>"; };
 		B3062FC31D0801C4001AFBCB /* JSRootViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSRootViewCell.xib; sourceTree = "<group>"; };
+		B3062FD11D0A58A2001AFBCB /* JSTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTabViewController.h; sourceTree = "<group>"; };
+		B3062FD21D0A58A2001AFBCB /* JSTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTabViewController.m; sourceTree = "<group>"; };
+		B3062FD81D0A5CAE001AFBCB /* JSOptionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSOptionalViewController.h; sourceTree = "<group>"; };
+		B3062FD91D0A5CAE001AFBCB /* JSOptionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSOptionalViewController.m; sourceTree = "<group>"; };
+		B3062FDA1D0A5CAE001AFBCB /* JSOptionalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSOptionalViewController.xib; sourceTree = "<group>"; };
+		B3062FEB1D0A691C001AFBCB /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		B3062FEC1D0A691C001AFBCB /* optional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optional.png; sourceTree = "<group>"; };
 		B3169C491D044B64005A9E7C /* RTStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3169C4D1D044B64005A9E7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B3169C581D044B64005A9E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,6 +91,57 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B3062FD41D0A5C8D001AFBCB /* Optional */ = {
+			isa = PBXGroup;
+			children = (
+				B3062FD51D0A5C8D001AFBCB /* Controller */,
+				B3062FD61D0A5C8D001AFBCB /* Model */,
+				B3062FD71D0A5C8D001AFBCB /* View */,
+			);
+			path = Optional;
+			sourceTree = "<group>";
+		};
+		B3062FD51D0A5C8D001AFBCB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3062FD81D0A5CAE001AFBCB /* JSOptionalViewController.h */,
+				B3062FD91D0A5CAE001AFBCB /* JSOptionalViewController.m */,
+				B3062FDA1D0A5CAE001AFBCB /* JSOptionalViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3062FD61D0A5C8D001AFBCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3062FD71D0A5C8D001AFBCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3062FDD1D0A66D5001AFBCB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B3062FDE1D0A66D5001AFBCB /* tabBar */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		B3062FDE1D0A66D5001AFBCB /* tabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B3062FEB1D0A691C001AFBCB /* home.png */,
+				B3062FEC1D0A691C001AFBCB /* optional.png */,
+			);
+			path = tabBar;
+			sourceTree = "<group>";
+		};
 		B3169C401D044B64005A9E7C = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B3169C7A1D06603A005A9E7C /* Home */,
+				B3062FD41D0A5C8D001AFBCB /* Optional */,
 				B3169C861D06603A005A9E7C /* Other */,
 			);
 			path = Classes;
@@ -172,9 +236,12 @@
 		B3169C861D06603A005A9E7C /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B3062FDD1D0A66D5001AFBCB /* images */,
 				B3169C961D06608E005A9E7C /* HTTPTool */,
 				B3169C871D06603A005A9E7C /* AppDelegate.h */,
 				B3169C881D06603A005A9E7C /* AppDelegate.m */,
+				B3062FD11D0A58A2001AFBCB /* JSTabViewController.h */,
+				B3062FD21D0A58A2001AFBCB /* JSTabViewController.m */,
 				B3169C8C1D06603A005A9E7C /* leoPch.pch */,
 			);
 			path = Other;
@@ -250,7 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3062FEE1D0A691C001AFBCB /* optional.png in Resources */,
+				B3062FDC1D0A5CAE001AFBCB /* JSOptionalViewController.xib in Resources */,
 				B3169C5C1D044B64005A9E7C /* LaunchScreen.storyboard in Resources */,
+				B3062FED1D0A691C001AFBCB /* home.png in Resources */,
 				B3169C591D044B64005A9E7C /* Assets.xcassets in Resources */,
 				B3062FC01D07BF04001AFBCB /* JSRootViewController.xib in Resources */,
 				B3062FC51D0801C4001AFBCB /* JSRootViewCell.xib in Resources */,
@@ -313,11 +383,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3169C901D06603A005A9E7C /* JSStock.m in Sources */,
+				B3062FDB1D0A5CAE001AFBCB /* JSOptionalViewController.m in Sources */,
 				B3169C8F1D06603A005A9E7C /* JSSellPankou.m in Sources */,
 				B3169C911D06603A005A9E7C /* AppDelegate.m in Sources */,
 				B3169C4E1D044B64005A9E7C /* main.m in Sources */,
 				B3169C991D06608E005A9E7C /* JSHTTPTool.m in Sources */,
 				B3169C8D1D06603A005A9E7C /* JSRootViewController.m in Sources */,
+				B3062FD31D0A58A2001AFBCB /* JSTabViewController.m in Sources */,
 				B3169C8E1D06603A005A9E7C /* JSBuyPankou.m in Sources */,
 				B3062FC41D0801C4001AFBCB /* JSRootViewCell.m in Sources */,
 			);

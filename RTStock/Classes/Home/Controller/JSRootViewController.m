@@ -4,7 +4,7 @@
 //
 //  Created by leo on 6/5/16.
 //  Copyright © 2016 leo. All rights reserved.
-//
+//  主页
 
 #import "JSRootViewController.h"
 #import "JSStock.h"
@@ -12,16 +12,16 @@
 #import "JSBuyPankou.h"
 #import "JSRootViewCell.h"
 
-
 #import <MJExtension.h>
 
 @interface JSRootViewController () <UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *sellPanTableView;
 @property (weak, nonatomic) IBOutlet UITableView *buyPanTableView;
-
-
 @property (weak, nonatomic) IBOutlet UILabel *stockName;
+
+/** Stock */
+@property (nonatomic, strong) JSStock *stock;
 
 /** 卖盘模型数组 */
 @property (nonatomic, strong) NSArray *sellPankousArr;
@@ -38,10 +38,31 @@ static NSString * const JSTagId = @"tag";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initUI];
+    // 界面初始化
+    [self initNav];
     
     [self loadData];
     
+}
+
+// 界面初始化
+- (void)initNav {
+    
+    self.navigationController.navigationBar.barTintColor = JSGlobalRedColor;
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor], NSFontAttributeName:[UIFont boldSystemFontOfSize:18]}];
+    self.title = @"主页";
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    
+    // TableViews
+    [self.sellPanTableView registerNib:[UINib nibWithNibName:NSStringFromClass([JSRootViewCell class]) bundle:nil] forCellReuseIdentifier:JSTagId];
+    self.sellPanTableView.tableFooterView = [[UIView alloc] init];
+    self.sellPanTableView.scrollEnabled = NO;
+    
+    [self.buyPanTableView registerNib:[UINib nibWithNibName:NSStringFromClass([JSRootViewCell class]) bundle:nil] forCellReuseIdentifier:JSTagId];
+    self.buyPanTableView.tableFooterView = [[UIView alloc] init];
+    self.buyPanTableView.scrollEnabled = NO;
+    
+    self.stockName.text = @"乐视网 300104";
 }
 
 // 加载数据
@@ -51,7 +72,7 @@ static NSString * const JSTagId = @"tag";
         JSStock *stock = [JSStock mj_objectWithKeyValues:responseObject];
         self.buyPankousArr = stock.buyPankous;
         self.sellPankousArr = stock.sellPankous;
-        
+        self.stock = stock;
         
         [self.sellPanTableView reloadData];
         [self.buyPanTableView reloadData];
@@ -62,15 +83,6 @@ static NSString * const JSTagId = @"tag";
     }];
 }
 
-// 界面初始化
-- (void)initUI {
-    
-    [self.sellPanTableView registerNib:[UINib nibWithNibName:NSStringFromClass([JSRootViewCell class]) bundle:nil] forCellReuseIdentifier:JSTagId];
-    
-    [self.buyPanTableView registerNib:[UINib nibWithNibName:NSStringFromClass([JSRootViewCell class]) bundle:nil] forCellReuseIdentifier:JSTagId];
-    
-    self.stockName.text = @"乐视网 300104";
-}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -78,6 +90,8 @@ static NSString * const JSTagId = @"tag";
     if (cell == nil) {
         cell = [[JSRootViewCell alloc] init];
     }
+    
+    cell.stock = self.stock;
     
     NSInteger index = indexPath.row + 1;
     // 卖家 tableView
@@ -91,7 +105,6 @@ static NSString * const JSTagId = @"tag";
         cell.buySellPerson = [NSString stringWithFormat:@"买家%ld",(long)index];
     }
     
-    
     return cell;
     
 }
@@ -101,7 +114,14 @@ static NSString * const JSTagId = @"tag";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    if (tableView == self.sellPanTableView) {
+        return self.sellPankousArr.count;
+    }
+    // 买家 tableView
+    if (tableView == self.buyPanTableView) {
+        return self.buyPankousArr.count;
+    }
+    return 0;
 }
 
 - (void)didReceiveMemoryWarning {

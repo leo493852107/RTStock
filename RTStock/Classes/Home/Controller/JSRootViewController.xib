@@ -15,37 +15,30 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="542"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wOY-V8-9Ji" userLabel="卖盘">
-                    <rect key="frame" x="0.0" y="77" width="159" height="398"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wOY-V8-9Ji" userLabel="卖盘">
+                    <rect key="frame" x="0.0" y="123" width="159" height="445"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="uZ7-z6-YLg"/>
                         <outlet property="delegate" destination="-1" id="NLb-6u-zbc"/>
                     </connections>
                 </tableView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AGk-JN-T40" userLabel="买盘">
-                    <rect key="frame" x="161" y="77" width="159" height="398"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="Hxu-DL-rX9"/>
-                        <outlet property="delegate" destination="-1" id="gnS-bW-nyg"/>
-                    </connections>
-                </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-9k-iJ3" userLabel="上下分界线">
-                    <rect key="frame" x="0.0" y="70" width="320" height="2"/>
-                    <color key="backgroundColor" red="1" green="0.129867968" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aGy-9k-iJ3" userLabel="上下分界线">
+                    <rect key="frame" x="0.0" y="100" width="320" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="2" id="Q9Y-hD-d7V"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdb-JL-vai" userLabel="中间分界线">
-                    <rect key="frame" x="159" y="72" width="2" height="408"/>
-                    <color key="backgroundColor" red="1" green="0.129867968" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdb-JL-vai" userLabel="中间分界线">
+                    <rect key="frame" x="159" y="100" width="2" height="445"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="2" id="0Ya-zY-9Xl"/>
+                        <constraint firstAttribute="height" constant="445" id="1AB-ED-guy"/>
                         <constraint firstAttribute="width" constant="2" id="GBu-pQ-VFy"/>
                     </constraints>
                     <variation key="default">
@@ -55,18 +48,48 @@
                     </variation>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2l-cQ-sVY" userLabel="股票名称">
-                    <rect key="frame" x="5" y="44" width="310" height="21"/>
+                    <rect key="frame" x="5" y="43" width="275" height="21.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yv-oz-GE8" userLabel="搜索">
+                    <rect key="frame" x="285" y="45" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Gjp-BF-1L3"/>
+                        <constraint firstAttribute="width" constant="20" id="SnE-FI-FDP"/>
+                    </constraints>
+                    <state key="normal" image="search"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mi-uz-Jnf">
+                    <rect key="frame" x="8" y="72" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnJ-fL-ve4">
+                    <rect key="frame" x="78" y="71" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AGk-JN-T40" userLabel="买盘">
+                    <rect key="frame" x="161" y="130" width="159" height="445"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Hxu-DL-rX9"/>
+                        <outlet property="delegate" destination="-1" id="gnS-bW-nyg"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="wOY-V8-9Ji" firstAttribute="top" secondItem="aGy-9k-iJ3" secondAttribute="bottom" constant="5" id="1HV-hP-BVs"/>
+                <constraint firstAttribute="trailing" secondItem="9Yv-oz-GE8" secondAttribute="trailing" constant="15" id="4ee-3d-U4U"/>
                 <constraint firstItem="wOY-V8-9Ji" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5ng-kq-hOz"/>
-                <constraint firstAttribute="bottom" secondItem="kdb-JL-vai" secondAttribute="bottom" id="5rm-HR-YBT"/>
-                <constraint firstAttribute="bottom" secondItem="AGk-JN-T40" secondAttribute="bottom" constant="5" id="A7s-Sf-Dvi"/>
+                <constraint firstAttribute="bottom" secondItem="kdb-JL-vai" secondAttribute="bottom" constant="40" id="5rm-HR-YBT"/>
+                <constraint firstAttribute="bottom" secondItem="AGk-JN-T40" secondAttribute="bottom" constant="40" id="A7s-Sf-Dvi"/>
+                <constraint firstItem="wOY-V8-9Ji" firstAttribute="top" secondItem="aGy-9k-iJ3" secondAttribute="bottom" constant="5" id="DBz-IT-hGr"/>
                 <constraint firstItem="kdb-JL-vai" firstAttribute="leading" secondItem="wOY-V8-9Ji" secondAttribute="trailing" constant="5" id="H4m-f9-hse"/>
                 <constraint firstItem="aGy-9k-iJ3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jkk-Xh-fvJ"/>
                 <constraint firstAttribute="trailing" secondItem="C2l-cQ-sVY" secondAttribute="trailing" constant="5" id="Jld-K7-JUb"/>
@@ -79,31 +102,43 @@
                 <constraint firstItem="AGk-JN-T40" firstAttribute="top" secondItem="aGy-9k-iJ3" secondAttribute="bottom" constant="5" id="Rqk-El-egY"/>
                 <constraint firstAttribute="trailing" secondItem="aGy-9k-iJ3" secondAttribute="trailing" id="XkY-Ea-2lh"/>
                 <constraint firstItem="kdb-JL-vai" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YCO-pL-tFt"/>
+                <constraint firstItem="wOY-V8-9Ji" firstAttribute="height" secondItem="kdb-JL-vai" secondAttribute="height" id="YCa-F3-gMn"/>
                 <constraint firstItem="wOY-V8-9Ji" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZUg-lM-iue"/>
+                <constraint firstItem="9Yv-oz-GE8" firstAttribute="leading" secondItem="C2l-cQ-sVY" secondAttribute="trailing" constant="5" id="agc-bB-gBo"/>
                 <constraint firstItem="aGy-9k-iJ3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="cOD-C6-FO2"/>
                 <constraint firstItem="kdb-JL-vai" firstAttribute="leading" secondItem="wOY-V8-9Ji" secondAttribute="trailing" id="f1E-D7-yZH"/>
+                <constraint firstItem="AGk-JN-T40" firstAttribute="height" secondItem="kdb-JL-vai" secondAttribute="height" id="kBk-Z1-HXu"/>
                 <constraint firstAttribute="bottom" secondItem="AGk-JN-T40" secondAttribute="bottom" id="lFr-cV-iVO"/>
                 <constraint firstItem="C2l-cQ-sVY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="lQv-i8-bCa"/>
                 <constraint firstItem="kdb-JL-vai" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mox-uF-jME"/>
-                <constraint firstAttribute="bottom" secondItem="wOY-V8-9Ji" secondAttribute="bottom" constant="5" id="oRv-YH-wAL"/>
+                <constraint firstAttribute="bottom" secondItem="wOY-V8-9Ji" secondAttribute="bottom" constant="40" id="oRv-YH-wAL"/>
                 <constraint firstAttribute="trailing" secondItem="AGk-JN-T40" secondAttribute="trailing" id="spK-ef-gzl"/>
                 <constraint firstAttribute="bottom" secondItem="kdb-JL-vai" secondAttribute="bottom" constant="5" id="tVZ-TX-UfC"/>
+                <constraint firstItem="aGy-9k-iJ3" firstAttribute="top" secondItem="9Yv-oz-GE8" secondAttribute="bottom" constant="5" id="zym-n6-e6d"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="Jld-K7-JUb"/>
+                    <exclude reference="1HV-hP-BVs"/>
                     <exclude reference="5ng-kq-hOz"/>
                     <exclude reference="K5Y-gw-cnQ"/>
+                    <exclude reference="oRv-YH-wAL"/>
+                    <exclude reference="5rm-HR-YBT"/>
                     <exclude reference="H4m-f9-hse"/>
                     <exclude reference="mox-uF-jME"/>
                     <exclude reference="tVZ-TX-UfC"/>
+                    <exclude reference="A7s-Sf-Dvi"/>
                     <exclude reference="QX1-qV-QyX"/>
                     <exclude reference="lFr-cV-iVO"/>
                     <exclude reference="spK-ef-gzl"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="185" y="255"/>
+            <point key="canvasLocation" x="185" y="286"/>
         </view>
     </objects>
+    <resources>
+        <image name="search" width="16" height="16"/>
+    </resources>
 </document>

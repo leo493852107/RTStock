@@ -23,8 +23,8 @@
 /** match */
 @property (nonatomic, strong) NSString *match;
 
-/** preClose */
-@property (nonatomic, copy) NSString *preClose;
+/** preClose 前日收盘价 */
+@property (nonatomic, assign) float preClose;
 
 /** success */
 @property (nonatomic, assign) BOOL success;

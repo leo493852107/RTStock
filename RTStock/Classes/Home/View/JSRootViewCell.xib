@@ -15,23 +15,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RX-VE-6Sp" userLabel="买卖">
-                        <rect key="frame" x="5" y="29.5" width="33" height="16"/>
+                        <rect key="frame" x="5" y="29" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25y-uB-phK" userLabel="价格">
-                        <rect key="frame" x="133.5" y="29.5" width="33" height="16"/>
+                        <rect key="frame" x="134" y="29" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oF-KX-Uhv" userLabel="数量">
-                        <rect key="frame" x="263" y="29.5" width="33" height="16"/>
+                        <rect key="frame" x="263" y="29" width="33" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLe-je-vCw" userLabel="分割线">
+                        <rect key="frame" x="0.0" y="74" width="301" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vhb-U9-Mdo"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="25y-uB-phK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1UL-uJ-9jR"/>
@@ -40,6 +47,9 @@
                     <constraint firstAttribute="trailing" secondItem="2oF-KX-Uhv" secondAttribute="trailing" constant="5" id="NRk-ni-Es6"/>
                     <constraint firstItem="5RX-VE-6Sp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Qb3-kW-CZB"/>
                     <constraint firstItem="2oF-KX-Uhv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Rim-Ow-jNd"/>
+                    <constraint firstAttribute="bottom" secondItem="fLe-je-vCw" secondAttribute="bottom" id="ZSf-RJ-ede"/>
+                    <constraint firstAttribute="trailing" secondItem="fLe-je-vCw" secondAttribute="trailing" id="n9h-Pl-bCz"/>
+                    <constraint firstItem="fLe-je-vCw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pQM-Jm-yKR"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

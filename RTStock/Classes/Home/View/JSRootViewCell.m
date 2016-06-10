@@ -9,6 +9,7 @@
 #import "JSRootViewCell.h"
 #import "JSSellPankou.h"
 #import "JSBuyPankou.h"
+#import "JSStock.h"
 
 @interface JSRootViewCell ()
 
@@ -23,18 +24,42 @@
 
 @implementation JSRootViewCell
 
+
+
 - (void)setBuySellPerson:(NSString *)buySellPerson {
     self.buySellLabel.text = buySellPerson;
 }
 
 - (void)setBuyPankou:(JSBuyPankou *)buyPankou {
-    self.priceLabel.text = buyPankou.price;
-    self.volumeLabel.text = [NSString stringWithFormat:@"%ld", buyPankou.volume];
+    self.volumeLabel.text = [NSString stringWithFormat:@"%ld", (long)buyPankou.volume];
+    float preClose = roundf(self.stock.preClose*100)/100;
+    float price = roundf(buyPankou.price*100)/100;
+    if (price > preClose) {
+        // 比收盘价高
+        self.priceLabel.textColor = [UIColor redColor];
+    } else if (price < preClose) {
+        // 比收盘价低
+        self.priceLabel.textColor = [UIColor greenColor];
+    } else {
+        self.priceLabel.textColor = [UIColor blackColor];
+    }
+    self.priceLabel.text = [NSString stringWithFormat:@"%.2f", price];
 }
 
 - (void)setSellPankou:(JSSellPankou *)sellPankou {
-    self.priceLabel.text = sellPankou.price;
-    self.volumeLabel.text = [NSString stringWithFormat:@"%ld", sellPankou.volume];
+    self.volumeLabel.text = [NSString stringWithFormat:@"%ld", (long)sellPankou.volume];
+    float preClose = roundf(self.stock.preClose*100)/100;
+    float price = roundf(sellPankou.price*100)/100;
+    if (price > preClose) {
+        // 比收盘价高
+        self.priceLabel.textColor = [UIColor redColor];
+    } else if (price < preClose) {
+        // 比收盘价低
+        self.priceLabel.textColor = [UIColor greenColor];
+    } else {
+        self.priceLabel.textColor = [UIColor blackColor];
+    }
+    self.priceLabel.text = [NSString stringWithFormat:@"%.2f", price];
 }
 
 - (void)awakeFromNib {

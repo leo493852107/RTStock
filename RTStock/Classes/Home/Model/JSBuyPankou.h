@@ -11,7 +11,7 @@
 @interface JSBuyPankou : NSObject
 
 /** 价格 */
-@property (nonatomic, copy) NSString *price;
+@property (nonatomic, assign) float price;
 
 /** 数量 */
 @property (nonatomic, assign) NSInteger volume;

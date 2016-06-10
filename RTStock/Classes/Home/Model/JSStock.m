@@ -18,7 +18,8 @@
     return @{
              @"buyPankous" : @"data.buyPankou",
              @"sellPankous" : @"data.sellPankou",
-             @"match" : @"data.match"
+             @"match" : @"data.match",
+             @"preClose" : @"data.preClose"
              };
 }
 

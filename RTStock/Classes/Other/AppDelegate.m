@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "JSRootViewController.h"
+#import "JSTabViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +22,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    JSRootViewController *rootVC = [[JSRootViewController alloc] init];
+    JSTabViewController *rootVC = [[JSTabViewController alloc] init];
     
     self.window.rootViewController = rootVC;
     

@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class JSBuyPankou,JSSellPankou;
+@class JSStock,JSBuyPankou,JSSellPankou;
 @interface JSRootViewCell : UITableViewCell
+
+/** Stock */
+@property (nonatomic, strong) JSStock *stock;
 
 /** 买家还是卖家 */
 @property (nonatomic, copy) NSString *buySellPerson;
